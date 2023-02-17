@@ -1,0 +1,54 @@
+<div class="coluna-esquerda altura-1_1 largura-1_3 centro">
+    <img src="recursos/imgs/T5.svg" style="top: 0px;left: 0px;width: 140px;">
+</div>
+<div class="coluna-direita" style="width: 676px;margin-right: 72px;">
+    <div style="width: 720px;margin-left: 30px;margin-top: 160px;">
+        <div style="display: flex;">
+            <div style="width: 320px;">
+                <p>O processo de operacionalização das ações previstas implica o desencadeamento de um processo de
+                    programação detalhada
+                    das atividades, o que, na prática, significa rever e recriar cada uma das propostas de
+                    intervenção à
+                    luz das condições
+                    concretas em que se dará a sua execução. </p>
+                <p>Clique sobre a imagem para ampliá-la.</p>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 52px; cursor: pointer;" id="botao_1">
+        <img class="animate__animated animate__backInRight" src="recursos/imgs/img-slide-85.png"
+            style="position: absolute;right: 112px;width: 163px;height: 409px;top: 54px;">
+    </div>
+    <div id="janela_1" style="cursor: pointer;">
+        <div
+            style="left: 0px;top: 26px;width: 888px;height: 516px;margin-top: -26px;position: absolute; overflow: scroll;">
+            <img src="recursos/imgs/img-slide-85.png"
+                style="left: 140px;top: 26px;width: 734px;height: 1589px;margin-top: -26px;position: absolute;">
+        </div>
+    </div>
+</div>
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        $(document).find('[id^=btn]').hide();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer');
+            $(botao).hover(() => {
+                $(document).find(`[id=btn_${index + 1}_2]`).show();
+            });
+            $(botao).mouseleave(() => {
+                $(document).find('[id^=btn]').hide();
+            });
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>

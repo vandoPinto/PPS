@@ -1,0 +1,50 @@
+<div class="coluna-esquerda altura-1_1 largura-1_3 centro">
+    <img src="recursos/imgs/T5.svg" style="top: 0px;left: 0px;width: 140px;">
+</div>
+
+<div class="coluna-direita" style="margin-right: 40px;">
+    <div style="width: 683px;margin-top: 58px;">
+        <div style="display: flex;">
+            <div style="margin-top: 151px;margin-left: 30px;width: 240px;">
+                <p>Clique sobre a imagem para conhecer os atores do PES na APS.
+                </p>
+            </div>
+            <div id="botao_1" style="cursor: pointer;">
+                <img class="animate__animated animate__backInRight" src="recursos/imgs/img-slide-72.png"
+                    style="margin-left: 120px;width: 206px;height: 436px;margin-top: -26px;">
+            </div>
+            <div id="janela_1" style="cursor: pointer;">
+                <div
+                    style="overflow: scroll;left: 0px;top: 26px;width: 889px;height: 540px;margin-top: -26px;position: absolute;">
+                    <img style="left: 140px;top: 0px;width: 749px;height: 1589px;margin-top: -26px;position: absolute;"
+                        src="recursos/imgs/img-slide-72.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        $(document).find('[id^=btn]').hide();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer');
+            $(botao).hover(() => {
+                $(document).find(`[id=btn_${index + 1}_2]`).show();
+            });
+            $(botao).mouseleave(() => {
+                $(document).find('[id^=btn]').hide();
+            });
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="652" height="80.525" viewBox="0 0 652 80.525">
+  <g id="Grupo_2969" data-name="Grupo 2969" transform="translate(-229 -387)">
+    <g id="etapa_3" data-name="etapa 3" transform="translate(645.452 387)">
+      <g id="Grupo_2387" data-name="Grupo 2387">
+        <path id="Caminho_5065" data-name="Caminho 5065" d="M736.707,80.085H544.73L588.3,39.823,544.73-.44H736.707l43.57,40.263Z" transform="translate(-544.73 0.44)" fill="#294667"/>
+        <path id="Caminho_5066" data-name="Caminho 5066" d="M737.865,78.5H553.2l41.021-37.721L553.2,3.06H737.865l41.384,37.721Zm-182.907-.569H737.531l40.76-37.152L737.531,3.629H554.957l40.288,37.152Z" transform="translate(-547.049 -0.518)" fill="#fff"/>
+      </g>
+      <text id="Etapa_3-2" data-name="Etapa 3" transform="translate(77.911 49.582)" fill="#fff" font-size="24" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="0" y="0">Etapa 3</tspan></text>
+    </g>
+    <g id="etapa_2" data-name="etapa 2" transform="translate(438.226 387)">
+      <g id="Grupo_2388" data-name="Grupo 2388">
+        <path id="Caminho_5067" data-name="Caminho 5067" d="M465.8,80.085H273.82l43.57-40.263L273.82-.44H465.8l43.57,40.263Z" transform="translate(-273.82 0.44)" fill="#294667"/>
+        <path id="Caminho_5068" data-name="Caminho 5068" d="M466.955,78.5H282.29l41.021-37.721L282.29,3.06H466.955l41.384,37.721Zm-182.907-.569H466.621l40.76-37.152L466.621,3.629H284.047l40.288,37.152Z" transform="translate(-276.139 -0.518)" fill="#fff"/>
+      </g>
+      <text id="Etapa_2-2" data-name="Etapa 2" transform="translate(77.477 49.582)" fill="#fff" font-size="24" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="0" y="0">Etapa 2</tspan></text>
+    </g>
+    <g id="etapa_1" data-name="etapa 1" transform="translate(229 387)">
+      <g id="Grupo_2389" data-name="Grupo 2389">
+        <path id="Caminho_5069" data-name="Caminho 5069" d="M194.887,80.085H2.91L46.48,39.823,2.91-.44H194.887l43.57,40.263Z" transform="translate(-2.91 0.44)" fill="#294667"/>
+        <path id="Caminho_5070" data-name="Caminho 5070" d="M196.045,78.5H11.38L52.4,40.781,11.38,3.06H196.045l41.384,37.721ZM13.137,77.932H195.711l40.76-37.152L195.711,3.629H13.137L53.425,40.781,13.137,77.932Z" transform="translate(-5.229 -0.518)" fill="#fff"/>
+      </g>
+      <text id="Etapa_1-2" data-name="Etapa 1" transform="translate(67.301 49.582)" fill="#fff" font-size="24" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="0" y="0">Etapa 1</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,114 @@
+<style>
+    .jan {
+        z-index: 30;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .8);
+    }
+</style>
+<div class="coluna-esquerda altura-1_1 largura-1_3 centro">
+    <img src="recursos/imgs/T5.svg" style="top: 0px;left: 0px;width: 140px;">
+</div>
+<div class="coluna-direita" style="margin-right: 40px;">
+    <div style="width: 683px;margin-top: 58px;">
+        <div style="display: flex;">
+            <div style="margin-top: 99px;width: 320px;">
+                <p>Nesse processo, existem diferentes métodos de planejamento. De maneira geral, em quaisquer das
+                    metodologias utilizadas,
+                    ressalta-se como fundamental assimilar e analisar os problemas que afetam as pessoas e as
+                    comunidades, ou seja, os
+                    obstáculos que dificultam a mudança da situação existente para a condição desejada. </p>
+                <p>Clique nos métodos e conheça um
+                    pouco deles.</p>
+            </div>
+            <img class="animate__animated animate__backInRight" src="recursos/imgs/img-slide-58.svg"
+                style="margin-left: 48px;width: 339px;margin-top: 33px;">
+        </div>
+    </div>
+    <div>
+        <div id="botao_1" style="width: 110px;  height: 99px;position: absolute; top: 156px; left: 620px;">
+        </div>
+        <div id="botao_2" style="width: 100px; height: 100px; position: absolute; top: 250px; left: 569px;">
+        </div>
+        <div id="botao_3" style="width: 100px; height: 100px; position: absolute; top: 250px; left: 693px;">
+        </div>
+    </div>
+    <div>
+        <div class="jan" id="janela_1">
+            <div
+                style="width: 743px;height: 190px;  background: 0% 0% no-repeat padding-box padding-box rgb(63, 107, 113); position: absolute; top: 186px; left: 70px; border-radius: 12px; cursor: pointer;">
+                <div
+                    style="display: flex;align-items: center;align-content: space-around;flex-direction: column;height: 190px;margin-top: 30px;">
+                    <p style="color: white;">ZOOMP</p>
+                    <p style="color: white;width: 647px;">Significa planificação de projetos orientados a objetivos.
+                        Esse
+                        método utiliza a técnica “tempestade de ideias” para
+                        construir uma primeira listagem de problemas, que, depois de agrupados por afinidade, passarão
+                        por
+                        protocolo de seleção,
+                        o qual servirá para confirmar ou não sua importância estratégica.</p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 730px;">x</p>
+            </div>
+        </div>
+        <div class="jan" id="janela_2">
+            <div
+                style="width: 743px;height: 190px;  background: 0% 0% no-repeat padding-box padding-box #FFA800; position: absolute; top: 186px; left: 70px; border-radius: 12px; cursor: pointer;">
+                <div
+                    style="display: flex;align-items: center;align-content: space-around;flex-direction: column;height: 190px;margin-top: 30px;">
+                    <p style="color: white;">MAPP</p>
+                    <p style="color: white;width: 647px;">Método Altadir de planejamento popular, que consiste na
+                        utilização
+                        do problema em si, explicação dos seus descritores e
+                        distribuição das causas em dois espaços – um que apresenta governabilidade por parte do ator, e
+                        o
+                        outro destituído dessa
+                        característica.</p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 730px;">x</p>
+            </div>
+        </div>
+        <div class="jan" id="janela_3">
+            <div
+                style="width: 743px;height: 190px;  background: 0% 0% no-repeat padding-box padding-box #506D8F; position: absolute; top: 186px; left: 70px; border-radius: 12px; cursor: pointer;">
+                <div
+                    style="display: flex;align-items: center;align-content: space-around;flex-direction: column;height: 190px;margin-top: 30px;">
+                    <p style="color: white;">ERP</p>
+                    <p style="color: white;width: 647px;">A estimativa rápida participativa consiste no maior
+                        envolvimento
+                        da comunidade na decisão e priorização dos problemas.
+                        Exige espaços institucionais de participação social nos territórios.</p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 730px;">x</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        $(document).find('[id^=btn]').hide();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer');
+            $(botao).hover(() => {
+                $(document).find(`[id=btn_${index + 1}_2]`).show();
+            });
+            $(botao).mouseleave(() => {
+                $(document).find('[id^=btn]').hide();
+            });
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>

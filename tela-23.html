@@ -1,0 +1,149 @@
+<style>
+    audio::-webkit-media-controls-volume-slider {
+        -webkit-appearance: media-volume-slider;
+        display: flex;
+        flex: 1 1.9 auto;
+        height: 8px;
+        max-width: 70px;
+        margin: 0 15px 0 0;
+        padding: 0;
+        background-color: black;
+        min-width: 15px;
+        border: initial;
+        color: inherit;
+    }
+
+    .jan {
+        z-index: 30;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .8);
+    }
+</style>
+<div style="height: 60px;width: 100%;">
+    <img style="height: 60px;position: absolute;right: 0px;" src="recursos/imgs/H1.png">
+    <p style="position: absolute;color: white;margin-left: 42px;margin-top: 26px;font-size: 12px;">TÓPICO<strong>
+            1</strong></p>
+    <p style="position: absolute;color: white;margin-left: 112px;margin-top: 26px;font-size: 11px;width: 450px;">
+        PLANEJAMENTO E PROGRAMAÇÃO EM SAÚDE NO SISTEMA ÚNICO DE SAÚDE (SUS)</p>
+</div>
+<div style="display: flex;flex-direction: row;justify-content: space-between;">
+    <div style="margin-left: 34px;margin-top: 101px;width: 404px;">
+        <p>Escute o áudio a seguir para saber mais sobre o triângulo de governo.</p>
+        <div style="margin-top: 12px;margin-left: 27px;width: 269px;">
+            <audio controls="">
+                <source src="recursos/audio/M2_U6_udio3_tela25.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div style="margin-top: -17px;margin-left: 20px;">
+                <a href="recursos/pdf/M2_U6_audio3_tela25.pdf" target="_blank">Texto do áudio</a>
+            </div>
+        </div>
+        <p style="margin-top: 32px;">Agora, clique sobre os itens nas pontas do triângulo para entender o que
+            significam, segundo Teixeira (2010).
+        </p>
+    </div>
+    <div class="coluna-direita animate__animated animate__backInRight">
+        <img style="margin-top: 59px;margin-right: 60px;width: 341px;" src="recursos/imgs/img-slide-25.svg">
+    </div>
+    <div>
+        <div id="botao_1" style="width: 60px; height: 50px;position: absolute;top: 118px;left: 600px;">
+        </div>
+        <div id="botao_2" style="width: 60px; height: 50px;position: absolute;top: 343px;left: 457px;">
+        </div>
+        <div id="botao_3" style="width: 60px; height: 50px;position: absolute;top: 343px;left: 750px;">
+        </div>
+    </div>
+    <div>
+        <div class="jan" id="janela_1">
+            <div
+                style="width: 743px; height: 190px; background: 0% 0% no-repeat padding-box padding-box rgb(0, 112, 192); border-radius: 12px; position: absolute; top: 160px; left: 60px; cursor: pointer;">
+                <div
+                    style="display: flex;justify-content: space-around;align-content: space-around;align-items: center;">
+                    <div
+                        style="width: 542px;display: flex;flex-direction: column;align-items: center;margin-left: 48px;">
+                        <p style="color: #FFFFFF;">PROJETO DE GOVERNO</p>
+                        <p style="color: #FFFFFF;">Conteúdo da proposta de um governo ou de um plano para que uma equipe
+                            atinja os seus objetivos.</p>
+                    </div>
+                    <p
+                        style="font: normal normal bold 100px/18px Poppins;letter-spacing: 0px;color: #FFFFFF;margin-right: 42px;">
+                        A</p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 720px;">x</p>
+            </div>
+        </div>
+        <div class="jan" id="janela_2">
+            <div
+                style="width: 743px; height: 190px; background: 0% 0% no-repeat padding-box padding-box rgb(0, 112, 192); border-radius: 12px; position: absolute; top: 160px; left: 60px; cursor: pointer;">
+                <div
+                    style="display: flex;justify-content: space-around;align-content: space-around;align-items: center;">
+                    <div
+                        style="width: 542px;display: flex;flex-direction: column;align-items: center;margin-left: 48px;">
+                        <p style="color: #FFFFFF;">CAPACIDADE DE GOVERNO</p>
+                        <p style="color: #FFFFFF;">Capacidade técnica para elaborar uma proposta considerando capacidade
+                            intelectual, institucional e experiência de um
+                            ator e sua equipe de governo na liderança e no manejo de métodos necessários para a
+                            implementação de um plano.</p>
+                    </div>
+                    <p
+                        style="font: normal normal bold 100px/18px Poppins;letter-spacing: 0px;color: #FFFFFF;margin-right: 42px;">
+                        B</p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 720px;">x</p>
+            </div>
+        </div>
+        <div class="jan" id="janela_3">
+            <div
+                style="width: 743px; height: 190px; background: 0% 0% no-repeat padding-box padding-box rgb(0, 112, 192); border-radius: 12px; position: absolute; top: 160px; left: 60px; cursor: pointer;">
+                <div
+                    style="display: flex;justify-content: space-around;align-content: space-around;align-items: center;">
+                    <div
+                        style="width: 542px;display: flex;flex-direction: column;align-items: center;margin-left: 48px;">
+                        <p style="color: #FFFFFF;">GOVERNABILIDADE</p>
+                        <p style="color: #FFFFFF;">Capacidade de articular recursos necessários para implementar o
+                            plano,
+                            frente a variáveis que são controladas ou não
+                            pelo ator do plano.</p>
+                    </div>
+                    <p
+                        style="font: normal normal bold 100px/18px Poppins;letter-spacing: 0px;color: #FFFFFF;margin-right: 42px;">
+                        C</p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 720px;">x</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer
+    style="width: 1008px;height: 19px;background-color: #0D536A;display: flex;justify-content: flex-start;align-items: center;">
+    <p style="color: white;font-size: 12px;margin-left: 40px;">PLANEJAMENTO E PROGRAMAÇÃO EM SAÚDE </p>
+</footer>
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        $(document).find('[id^=btn]').hide();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer');
+            $(botao).hover(() => {
+                $(document).find(`[id=btn_${index + 1}_2]`).show();
+            });
+            $(botao).mouseleave(() => {
+                $(document).find('[id^=btn]').hide();
+            });
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>
